@@ -1,2 +1,1 @@
-# Lunchlab
-
+# Generate-next-js-project
