@@ -5,7 +5,6 @@ export type ButtonProps = {
   type: "default" | "gradient" | "disabled" | "black" | "light";
   width?: number;
   isFullWidth?: boolean;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export default function Button({
@@ -13,7 +12,6 @@ export default function Button({
   type,
   width,
   isFullWidth = false,
-  onClick,
 }: ButtonProps) {
   return <button>button</button>;
 }

@@ -25,50 +25,12 @@ export const Default: Story = {
     children: "Button",
   },
 };
-export const Gradient: Story = {
-  args: {
-    type: "gradient",
-    children: "Gradient Button",
-  },
-};
-
-export const Black: Story = {
-  args: {
-    type: "black",
-    children: "Black Button",
-  },
-};
-
-export const Disabled: Story = {
-  args: {
-    type: "disabled",
-    children: "Disabled Button",
-  },
-};
-
-export const Light: Story = {
-  args: {
-    type: "light",
-    children: "Light Button",
-  },
-};
 
 export const FullWidth: Story = {
   render: () => {
-    const types: ButtonProps["type"][] = [
-      "default",
-      "gradient",
-      "black",
-      "disabled",
-      "light",
-    ];
     return (
       <div className="flex flex-col gap-2">
-        {types.map((type, idx) => (
-          <Button key={idx} isFullWidth={true} type={type}>
-            {type} full width
-          </Button>
-        ))}
+        <Button type={"default"}>full width</Button>
       </div>
     );
   },
